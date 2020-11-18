@@ -1,0 +1,26 @@
+{
+  "name": "crud-react-next-and-faunaDB",
+  "version": "1.0.0",
+  "description": "Este projeto tem como intenção aprender mais sobre como utilizar o FaunaDB em projetos Serverless.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/williamtome/crud-react-next-and-faunaDB.git"
+  },
+  "keywords": [],
+  "author": "William Tomé",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/williamtome/crud-react-next-and-faunaDB/issues"
+  },
+  "homepage": "https://github.com/williamtome/crud-react-next-and-faunaDB#readme",
+  "dependencies": {
+    "faunadb": "^3.0.1",
+    "next": "^10.0.1",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1"
+  }
+}
