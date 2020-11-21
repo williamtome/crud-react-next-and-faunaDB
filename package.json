@@ -1,10 +1,12 @@
 {
-  "name": "crud-react-next-and-faunaDB",
+  "name": "crud_react_next_and_faunaDB",
   "version": "1.0.0",
   "description": "Este projeto tem como intenção aprender mais sobre como utilizar o FaunaDB em projetos Serverless.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "next",
+    "start": "next start",
+    "build": "next build"
   },
   "repository": {
     "type": "git",
