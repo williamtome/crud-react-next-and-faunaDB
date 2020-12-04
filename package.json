@@ -21,8 +21,10 @@
   "homepage": "https://github.com/williamtome/crud-react-next-and-faunaDB#readme",
   "dependencies": {
     "faunadb": "^3.0.1",
+    "formik": "^2.2.5",
     "next": "^10.0.1",
     "react": "^17.0.1",
-    "react-dom": "^17.0.1"
+    "react-dom": "^17.0.1",
+    "swr": "^0.3.9"
   }
 }
