@@ -1,17 +1,4 @@
-import { q, client } from '../../utils/db'
-
-const getAllContacts = () => {
-  return client.query(
-    q.Map(
-      q.Paginate(q.Match('allContacts'), { size: 2 }),
-      q.Lambda(x => q.Get(x))
-    )
-  )
-}
-
-const createContacts = data => {
-  return client.query(q.Create(q.Collection('contacts'), { data }))
-}
+import { getAllContacts, createContacts } from '../../services/contacts'
 
 export default async function handler(req, res) {
   if(req.method === 'POST'){
