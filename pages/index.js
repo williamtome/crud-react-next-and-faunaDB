@@ -11,7 +11,7 @@ const Index = () => {
       { 
         data.data.map(contact => {
           return (
-            <div>
+            <div key={contact.data.ref}>
               {contact.data.name} - {contact.data.email}
             </div>
           )
