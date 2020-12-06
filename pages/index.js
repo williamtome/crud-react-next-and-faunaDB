@@ -11,13 +11,13 @@ const Index = () => {
       { 
         data.data.map(contact => {
           return (
-            <div key={contact.data.ref}>
+            <div key={contact.ref['@ref'].id}>
               {contact.data.name} - {contact.data.email}
             </div>
           )
         })
       }
-      <pre>{JSON.stringify(data, null, 2)}</pre>
+      {/* <pre>{JSON.stringify(data, null, 2)}</pre> */}
     </div>
   )
 }
