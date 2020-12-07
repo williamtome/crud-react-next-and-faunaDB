@@ -1,4 +1,4 @@
-import { getAllContacts, createContacts } from '../../services/contacts'
+import { getAllContacts, createContacts } from '../../../services/contacts'
 
 export default async function handler(req, res) {
   if(req.method === 'POST'){
