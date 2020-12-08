@@ -1,4 +1,5 @@
 import useSWR from 'swr'
+import Link from 'next/link'
 
 const deleteRequest = async(url) => {
   const res = await fetch(url, {
@@ -20,6 +21,7 @@ const Index = () => {
   return (
     <div>
       <h1>Olá LiveClass FaunaDB</h1>
+      <p><Link href='/create'>Criar contato</Link></p>
       { 
         data.data.map(contact => {
           return (
