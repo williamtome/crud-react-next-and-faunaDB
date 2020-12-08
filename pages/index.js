@@ -9,9 +9,10 @@ const deleteRequest = async(url) => {
 }
 
 const Index = () => {
-  const { data } = useSWR('/api/contacts')
-  const deleteContact = (ref) => {
-    deleteRequest('/api/contacts/'+ref)
+  const { data, mutate } = useSWR('/api/contacts')
+  const deleteContact = async(ref) => {
+    await deleteRequest('/api/contacts/'+ref)
+    mutate()
   }
   if (!data) {
     return <p>Loading...</p>
