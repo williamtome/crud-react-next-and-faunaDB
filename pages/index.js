@@ -1,7 +1,18 @@
 import useSWR from 'swr'
 
+const deleteRequest = async(url) => {
+  const res = await fetch(url, {
+    method: 'DELETE'
+  })
+  const data = await res.json()
+  return data
+}
+
 const Index = () => {
   const { data } = useSWR('/api/contacts')
+  const deleteContact = (ref) => {
+    deleteRequest('/api/contacts/'+ref)
+  }
   if (!data) {
     return <p>Loading...</p>
   }
@@ -13,6 +24,8 @@ const Index = () => {
           return (
             <div key={contact.ref['@ref'].id}>
               {contact.data.name} - {contact.data.email}
+              <button type='button' onClick={()=>deleteContact(contact.ref['@ref'].id)}>Remove</button>
+              <hr/>
             </div>
           )
         })
