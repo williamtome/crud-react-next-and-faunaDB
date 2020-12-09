@@ -15,7 +15,7 @@ Em seguida, criar um novo database e depois gerar uma chave de segurança para q
 ![Preview](https://github.com/williamtome/crud-react-next-and-faunaDB/blob/master/generate-key.gif?raw=true)
 
 Recomendo salvar esta chave num arquivo .env na pasta raiz do projeto.
-<img src="./env file.jpg">
+<br><img src="./env file.jpg">
 
 ## Autor
 ** William Weirich Tomé **
