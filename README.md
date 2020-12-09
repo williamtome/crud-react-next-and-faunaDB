@@ -12,7 +12,7 @@ Este projeto tem como intenção aprender mais sobre como utilizar o banco de da
 Para utilizar a aplicação, é preciso criar uma conta no site do FaunaDB.
 Em seguida, criar um novo database e depois gerar uma chave de segurança para que a aplicação consiga acessar o fauna. 
 
-![Preview](https://github.com/williamtome/crud-react-next-and-faunaDB/blob/master/generate-key.gif?raw=true)
+![Preview](https://github.com/williamtome/crud-react-next-and-faunaDB/blob/master/faunadb.gif?raw=true)
 
 Recomendo salvar esta chave num arquivo .env na pasta raiz do projeto.
 <br><img src="./env file.jpg">
