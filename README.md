@@ -6,6 +6,7 @@ Este projeto tem como intenção aprender mais sobre como utilizar o banco de da
 * [NodeJS](https://nodejs.org/en/)
 * [React](https://pt-br.reactjs.org/)
 * [NextJS](https://nextjs.org/)
+* [TailwindCSS](https://tailwindcss.com/)
 * [FaunaDB](https://fauna.com/)
 
 # Instruções
