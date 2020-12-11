@@ -20,14 +20,48 @@ const Index = () => {
   }
   return (
     <div>
-      <h1>Olá LiveClass FaunaDB</h1>
-      <p><Link href='/create'>Criar contato</Link></p>
+      <h1 className='text-3x1 text-center'>Lista de Contatos</h1>
+      <p>
+        <Link href='/create'>
+          <a className="
+          py-2 
+          px-4 
+          bg-green-500 
+          text-white 
+          font-semibold 
+          rounded-lg 
+          shadow-md 
+          hover:bg-green-700 
+          focus:outline-none 
+          focus:ring-2 
+          focus:ring-green-400 
+          focus:ring-opacity-75">
+            Criar contato
+          </a>
+        </Link>
+      </p>
       { 
         data.data.map(contact => {
           return (
-            <div key={contact.ref['@ref'].id}>
-              {contact.data.name} - {contact.data.email}
-              <button type='button' onClick={()=>deleteContact(contact.ref['@ref'].id)}>Remove</button>
+            <div className='mx-6 my-6' key={contact.ref['@ref'].id}>
+              <strong>{contact.data.name}</strong> - {contact.data.email}
+              <button 
+              type='button' 
+              className='
+              mx-4
+              py-1 
+              px-4 
+              bg-red-500 
+              text-white 
+              font-semibold 
+              rounded-lg 
+              shadow-md 
+              hover:bg-red-700 
+              focus:outline-none 
+              focus:ring-2 
+              focus:ring-red-400 
+              focus:ring-opacity-75'
+              onClick={()=>deleteContact(contact.ref['@ref'].id)}>Remove</button>
               <hr/>
             </div>
           )
