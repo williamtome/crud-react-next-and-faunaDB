@@ -3,7 +3,7 @@ import '../css/style.css'
 
 const App = ({ Component, pageProps }) => {
   return (
-    <div>
+    <div className='container m-auto'>
       <Component {...pageProps} />
     </div>
   )
