@@ -28,28 +28,67 @@ const Create = () => {
     }
   })
   return (
-    <div>
-      <h1>Create Contact</h1>
+    <div className='w-2/4 m-auto my-8 text-center justify-center col-span-6 sm:col-span-3'>
+      <h1 className='my-5'>Novo Contato</h1>
       <form onSubmit={form.handleSubmit}>
         <input type="text" 
           placeholder='Name' 
           name='name' 
           onChange={form.handleChange} 
-          value={form.values.name} />
+          value={form.values.name} 
+          className='mt-3 
+          block 
+          w-96
+          m-auto
+          shadow-sm 
+          sm:text-sm 
+          border-gray-300 
+          rounded-md'/>
         
         <input type="text" 
           placeholder='E-mail' 
           name='email' 
           onChange={form.handleChange} 
-          value={form.values.email} />
+          value={form.values.email} 
+          className='mt-3 
+          block 
+          w-96          
+          m-auto
+          shadow-sm 
+          sm:text-sm 
+          border-gray-300 
+          rounded-md'/>
         
         <input type="text" 
           placeholder='Title' 
           name='title' 
           onChange={form.handleChange} 
-          value={form.values.title} />
+          value={form.values.title} 
+          className='mt-3 
+          block 
+          w-96
+          m-auto
+          shadow-sm 
+          sm:text-sm 
+          border-gray-300 
+          rounded-md'/>
 
-        <button type='submit'>Salvar</button>
+        <button
+          className='
+          my-4
+          py-2 
+          px-4 
+          bg-blue-500 
+          text-white 
+          font-semibold 
+          rounded-lg 
+          shadow-md 
+          hover:bg-blue-700 
+          focus:outline-none 
+          focus:ring-2 
+          focus:ring-blue-400 
+          focus:ring-opacity-75"'
+          type='submit'>Salvar</button>
       </form>
     </div>
   )
