@@ -1,3 +1,12 @@
 @import "tailwindcss/base";
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
+
+/* 
+  Caso precise adicionar um estilo diferente à algum elemento:
+*/
+@layer base {
+  h1 {
+    @apply text-3xl;
+  }
+}
