@@ -37,12 +37,13 @@ const Create = () => {
           onChange={form.handleChange} 
           value={form.values.name} 
           className='mt-3 
-          block 
+          block
+          py-2 
           w-96
           m-auto
           shadow-sm 
           sm:text-sm 
-          border-gray-300 
+          border-gray-500 
           rounded-md'/>
         
         <input type="text" 
@@ -52,11 +53,12 @@ const Create = () => {
           value={form.values.email} 
           className='mt-3 
           block 
-          w-96          
+          w-96
+          py-2          
           m-auto
           shadow-sm 
           sm:text-sm 
-          border-gray-300 
+          border-gray-500 
           rounded-md'/>
         
         <input type="text" 
@@ -67,10 +69,11 @@ const Create = () => {
           className='mt-3 
           block 
           w-96
+          py-2
           m-auto
           shadow-sm 
           sm:text-sm 
-          border-gray-300 
+          border-gray-500 
           rounded-md'/>
 
         <button
