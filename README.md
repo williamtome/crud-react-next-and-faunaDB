@@ -9,6 +9,12 @@ Este projeto tem como intenção aprender mais sobre como utilizar o banco de da
 * [TailwindCSS](https://tailwindcss.com/)
 * [FaunaDB](https://fauna.com/)
 
+# Hospedagem
+
+O projeto está hospedado na [Vercel](https://vercel.com)
+
+[Clique aqui](https://contatos.williamtome.dev/) para visualizar o projeto.
+
 # Instruções
 Para utilizar a aplicação, é preciso criar uma conta no site do FaunaDB.
 Em seguida, criar um novo database e depois gerar uma chave de segurança para que a aplicação consiga acessar o fauna. 
