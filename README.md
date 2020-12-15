@@ -25,7 +25,7 @@ Recomendo salvar esta chave num arquivo .env na pasta raiz do projeto.
 <br><img src="./env file.jpg">
 
 ## Autor
-** William Weirich Tomé **
+**William Weirich Tomé**
 
 ## Créditos
 
