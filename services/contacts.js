@@ -13,6 +13,14 @@ export const createContacts = data => {
   return client.query(q.Create(q.Collection('contacts'), { data }))
 }
 
+export const getContactByRef = ref => {
+  return client.query(q.Get(q.Ref(q.Collection('contacts'), ref)))
+}
+
+export const updateContact = ref => {
+  return client.query(q.Update(q.Ref(q.Collection('contacts'), ref)))
+}
+
 export const deleteContact = ref => {
   return client.query(q.Delete(q.Ref(q.Collection('contacts'), ref)))
 }
