@@ -9,10 +9,22 @@ const deleteRequest = async(url) => {
   return data
 }
 
+const editRequest = async(url) => {
+  const res = await fetch(url, {
+    method: 'UPDATE'
+  })
+  const data = await res.json()
+  return data
+}
+
 const Index = () => {
   const { data, mutate } = useSWR('/api/contacts')
   const deleteContact = async(ref) => {
     await deleteRequest('/api/contacts/'+ref)
+    mutate()
+  }
+  const editContact = async(ref) => {
+    await editRequest('/api/contacts/'+ref)
     mutate()
   }
   if (!data) {
@@ -46,6 +58,7 @@ const Index = () => {
             return (
               <div className='mx-6 my-6' key={contact.ref['@ref'].id}>
                 <strong>{contact.data.name}</strong> - {contact.data.email}
+                <button type='button' onClick={()=>editContact(contact.ref['@ref'].id)}>Edit</button>
                 <button 
                 type='button' 
                 className='
